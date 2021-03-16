@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container h1.caption {
+  padding: 20px;
+  text-align: center;
+}
+.container-content {
+  display: flex;
+}
+.content-left {
+  flex: 1;
+  margin-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 250px;
+}
+.add-task-title {
+  position: relative;
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  padding: 12px;
+}
+.add-task-title span {
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+.add-task-title p {
+  margin: 0;
+}
+.add-task-name {
+  padding: 12px;
+}
+.add-task-name input {
+  width: 100%;
+}
+.add-task-status {
+  padding: 0 12px 12px;
+}
+.add-task-status input {
+  width: 100%;
+}
+.add-task-action {
+  margin-bottom: 12px;
+  text-align: center;
+}
+.add-task-action button:first-child {
+  margin-right: 20px;
+}
+
+.content-right {
+  flex: 3;
+  padding: 0 12px;
+}
+.add-task-btn {
+  margin-bottom: 12px;
+}
+.task-search-sort {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.task-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.task-search input {
+  width: 60%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 6px;
+}
+.task-search span {
+  display: inline-block;
+  background-color: #007bff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  padding: 3px;
+  border: 1px solid #007bff;
+}
+.task-sort {
+  flex: 1;
+}
+
+.task-table table {
+  width: 100%;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+table th {
+  text-align: center;
+
+}
+.task-table table tr.table-search td {
+  padding: 12px 50px;
+}
+.task-table table tr.table-search input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 12px;
+  outline: none;
+}
+.task-table table td.task-status {
+  text-align: center;
+  outline: none;
+}
+.task-table table td.task-list-content {
+  padding-left: 12px;
+}
+.task-table table td.task-list-stt,
+.task-table table td.task-list-status,
+.task-table table td.task-list-action {
+  text-align: center;
+}
+.task-table table td.task-list-status button,
+.task-table table td.task-list-action button {
+  padding: 5px 10px;
+  margin: 12px 5px;
+}
+.sort-selected {
+  background-color: #ccc;
+}
+
+@media only screen and (max-width: 960px) {
+  .container-content {
+    flex-direction: column;
+  }
+  .content-left {
+    margin: 0 0 30px;
+    padding: 0;
+  }
+  .content-right {
+    margin-bottom: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
